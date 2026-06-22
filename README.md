@@ -28,32 +28,43 @@ create table contacts (
   created_at timestamp with time zone default timezone('utc'::text, now()) not null
 );
 
-Insira contatos para teste:
+### Insira contatos para teste
 insert into contacts (name, phone) values
 ('João Silva', '+5511999999999'),
 ('Wally Viana', '+5545999292970'),
 ('Kaio Quevedo', '+5545988034879');
+```
 
-Variáveis de Ambiente
-Crie um arquivo .env na raiz do projeto (use o env.example como base) e preencha com as suas credenciais:
+### Variáveis de Ambiente
+Crie um arquivo `.env` na raiz do projeto (use o `env.example` como base) e preencha com as suas credenciais:
+
+```
 SUPABASE_URL=sua_url_do_supabase_aqui
 SUPABASE_KEY=sua_chave_secreta_do_supabase_aqui
 ZAPI_INSTANCE_ID=seu_id_da_instancia_zapi_aqui
 ZAPI_TOKEN=seu_token_zapi_aqui
 ZAPI_CLIENT_TOKEN=seu_client_token_zapi_aqui
+```
 
-Instalação e Execução
+## Instalação e Execução
+
 Clone este repositório:
+```bash
 git clone [https://github.com/seu-usuario/seu-repositorio.git](https://github.com/seu-usuario/seu-repositorio.git)
 cd seu-repositorio
+```
 
 Instale as dependências requeridas:
+```bash
 pip install -r requirements.txt
+```
 
 Execute o script:
+```bash
 python -m src.main
+```
 
-Estrutura do Projeto:
+## Estrutura do Projeto:
 .
 ├── src/
 │   ├── main.py            # Ponto de entrada e orquestração do fluxo
