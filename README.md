@@ -27,6 +27,7 @@ create table contacts (
   phone varchar(20) not null,
   created_at timestamp with time zone default timezone('utc'::text, now()) not null
 );
+```
 
 ### Insira contatos para teste
 
@@ -35,7 +36,7 @@ insert into contacts (name, phone) values
 ('João Silva', '+5511999999999'),
 ('Wally Viana', '+5545999292970'),
 ('Kaio Quevedo', '+5545988034879');
-
+```
 ### Variáveis de Ambiente
 Crie um arquivo `.env` dentro da pasta `Integration/` (use o `env.example` como base) e preencha com as suas credenciais:
 
@@ -52,7 +53,7 @@ ZAPI_CLIENT_TOKEN=seu_client_token_zapi_aqui
 Clone este repositório:
 ```bash
 git clone [https://github.com/seu-usuario/seu-repositorio.git](https://github.com/seu-usuario/seu-repositorio.git)
-cd seu-repositorio
+cd seu-repositorio  
 ```
 
 Instale as dependências requeridas:
@@ -66,6 +67,7 @@ python -m src.main
 ```
 
 ## Estrutura do Projeto:
+```
 .
 ├── src/
 │   ├── main.py            # Ponto de entrada e orquestração do fluxo
@@ -76,3 +78,4 @@ python -m src.main
 ├── .gitignore             # Arquivos e pastas ignorados pelo Git
 ├── requirements.txt       # Dependências do projeto
 └── README.md              # Documentação do projeto
+```
