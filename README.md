@@ -29,14 +29,15 @@ create table contacts (
 );
 
 ### Insira contatos para teste
+
+```sql
 insert into contacts (name, phone) values
 ('João Silva', '+5511999999999'),
 ('Wally Viana', '+5545999292970'),
 ('Kaio Quevedo', '+5545988034879');
-```
 
 ### Variáveis de Ambiente
-Crie um arquivo `.env` na raiz do projeto (use o `env.example` como base) e preencha com as suas credenciais:
+Crie um arquivo `.env` dentro da pasta `Integration/` (use o `env.example` como base) e preencha com as suas credenciais:
 
 ```
 SUPABASE_URL=sua_url_do_supabase_aqui
